@@ -14,6 +14,7 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/apps', 'ShopifyAppController@index');
+Route::get('/apps/stats', 'ShopifyAppController@stats');
 
 Route::get('/reviews', 'ReviewController@index');
 

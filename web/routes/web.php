@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::redirect('/', '/dashboard', 301);
+
+Route::any('{slug}', function() {
+    return view('react');
+})->where('slug', '(?!api)([A-z\d-\/_.]+)?');
+
+// Route::get('/', function () {
+//     return view('react');
+// });

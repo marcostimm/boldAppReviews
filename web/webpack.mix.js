@@ -11,5 +11,18 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+mix.react('resources/assets/js/app.js', 'public/js')
+    .scripts(
+    [
+        'resources/assets/js/core/jquery.min.js',
+        'resources/assets/js/core/popper.min.js',
+        'resources/assets/js/core/bootstrap-material-design.min.js',
+        'resources/assets/js/plugins/chartist.min.js',
+        'resources/assets/js/plugins/bootstrap-notify.js',
+        'resources/assets/js/material-dashboard.js',
+    ], 
+    'public/js/lib.js')
+    .styles([
+        'resources/assets/css/material-dashboard.min.css',
+        'resources/assets/css/bold.css'
+    ], 'public/css/all.css');

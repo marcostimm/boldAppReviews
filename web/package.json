@@ -11,12 +11,30 @@
     },
     "devDependencies": {
         "axios": "^0.18",
+        "babel-preset-react": "^6.23.0",
         "bootstrap": "^4.0.0",
-        "popper.js": "^1.12",
         "cross-env": "^5.1",
         "jquery": "^3.2",
         "laravel-mix": "^2.0",
         "lodash": "^4.17.4",
-        "vue": "^2.5.7"
+        "popper.js": "^1.12",
+        "react": "^16.4.1",
+        "react-dom": "^16.4.1"
+    },
+    "name": "web",
+    "version": "1.0.0",
+    "main": "webpack.mix.js",
+    "directories": {
+        "test": "tests"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "jwt-decode": "^2.2.0",
+        "react-redux": "^5.0.7",
+        "react-router-dom": "^4.3.1",
+        "redux": "^4.0.0",
+        "redux-thunk": "^2.3.0"
     }
 }
