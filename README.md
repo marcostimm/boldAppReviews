@@ -18,18 +18,35 @@ Enter in the project root directory and run Docker
 docker-compose up -d
 ```
 
-Enter in `web` directory and run the migrations and seed
+Enter in `web` directory and install all dependencies
 
 ```
-php artisan migrate --seed
+composer install
 ```
-
-Download all dependencies
 
 ```
 npm install
 ```
 
+
+Run the migrations and seed
+
+```
+php artisan migrate --seed
+```
+
+## Task Scheduling
+
+Docker is prepared to run cron that call the Laravel command scheduler, but you can manually call by the follow url
+
+```
+[http://localhost/api/apps/sync](http://localhost/api/apps/sync)
+```
+
+## Access Bold App Review Panel
+```
+[http://localhost](http://localhost)
+```
 
 ## Running the tests
 
