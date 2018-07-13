@@ -2,9 +2,8 @@
 
 namespace App\Console\Commands;
 
-set_time_limit(0);
-
 use Illuminate\Console\Command;
+use Carbon\Carbon;
 
 use App\ShopifyApp;
 use App\Review;
@@ -91,16 +90,19 @@ class syncReview extends Command
         // Create or Update a review based on domain and app
         // Model will take care to store previous rating value
         foreach($reviews['reviews'] as $review) {
+
             Review::updateOrCreate(
                 [
                     'shopify_domain'    => $review['shop_domain'],
                     'app_slug'          => $slug
                 ],
                 [
-                    'star_rating' => $review['star_rating'] // ⚠️ For test, set a manual int value here (1..5) and sync again
+                    'date'              => Carbon::parse($review['created_at'])->format('Y-m-d H:i:s'),
+                    'star_rating'       => $review['star_rating'] // ⚠️⚠️⚠️ For test, set a manual int value here like `rand(1,5)` and sync again ⚠️⚠️⚠️
                 ]
             );
         }
         return true;
     }
+
 }
