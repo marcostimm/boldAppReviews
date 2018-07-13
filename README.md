@@ -40,12 +40,12 @@ php artisan migrate --seed
 Docker is prepared to run cron that call the Laravel command scheduler, but you can manually call by the follow url
 
 ```
-[http://localhost/api/apps/sync](http://localhost/api/apps/sync)
+http://localhost/api/apps/sync
 ```
 
-## Access Bold App Review Panel
+## 🖥 Access Bold App Review Panel
 ```
-[http://localhost](http://localhost)
+http://localhost
 ```
 
 ## Running the tests
@@ -63,3 +63,4 @@ phpunit
 ## Acknowledgments
 
 * https://www.creative-tim.com/product/material-dashboard
+* Bold 🇨🇦
