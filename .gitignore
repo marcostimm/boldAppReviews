@@ -1,3 +1,2 @@
 mysql/*
-mysql/!.empty
-!/.gitignore
+!mysql/.empty
