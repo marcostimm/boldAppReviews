@@ -1,0 +1,8 @@
+mysql/
+
+Thumbs.db
+Desktop.ini
+
+/vendor/*
+
+!/.gitignore
