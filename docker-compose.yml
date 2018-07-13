@@ -1,0 +1,48 @@
+version: '2'
+services:
+######################################
+# PHP-FPM Container
+######################################
+  php:
+    build:
+      context: ./docker/php7-fpm
+    image: marcostimm/laravel:1.1
+    depends_on:
+      - database
+    environment:
+      DEBUG: 'true'
+      DB_HOST:  'database'
+      DB_DATABASE: 'bold'
+      DB_USERNAME: 'bold'
+      DB_PASSWORD: 'bold'
+    volumes:
+      - ./web/:/var/www/html:rw
+######################################
+# NGINX Alpine Container
+######################################
+  web:
+    image: nginx:alpine
+    volumes_from:
+      - php
+    depends_on:
+      - php
+    volumes:
+      - ./docker/nginx/default:/etc/nginx/conf.d/default.conf
+    ports:
+      - 80:80
+######################################
+# MySQL Container
+######################################
+  database:
+    image: mysql
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: bold
+      MYSQL_USER: bold
+      MYSQL_PASSWORD: bold
+      
+      
