@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="REST API Test Suite" tests="6" assertions="17" errors="0" failures="0" skipped="0" time="1.452741">
+    <testsuite name="Tests\Feature\ReviewApiTest" file="/Users/timm/Documents/Personal/www/bold2/web/tests/API/ReviewApiTest.php" tests="3" assertions="7" errors="0" failures="0" skipped="0" time="0.924911">
+      <testcase name="testReviewReturnsValidStatus" class="Tests\Feature\ReviewApiTest" classname="Tests.Feature.ReviewApiTest" file="/Users/timm/Documents/Personal/www/bold2/web/tests/API/ReviewApiTest.php" line="19" assertions="1" time="0.537003"/>
+      <testcase name="testReviewReturnsValidData" class="Tests\Feature\ReviewApiTest" classname="Tests.Feature.ReviewApiTest" file="/Users/timm/Documents/Personal/www/bold2/web/tests/API/ReviewApiTest.php" line="30" assertions="5" time="0.170585"/>
+      <testcase name="testReviewReturnsWillFilterByAppSlug" class="Tests\Feature\ReviewApiTest" classname="Tests.Feature.ReviewApiTest" file="/Users/timm/Documents/Personal/www/bold2/web/tests/API/ReviewApiTest.php" line="47" assertions="1" time="0.217323"/>
+    </testsuite>
+    <testsuite name="Tests\Feature\ShopifyAppTest" file="/Users/timm/Documents/Personal/www/bold2/web/tests/API/ShopifyAppTest.php" tests="3" assertions="10" errors="0" failures="0" skipped="0" time="0.527830">
+      <testcase name="testReviewReturnsValidStatus" class="Tests\Feature\ShopifyAppTest" classname="Tests.Feature.ShopifyAppTest" file="/Users/timm/Documents/Personal/www/bold2/web/tests/API/ShopifyAppTest.php" line="16" assertions="1" time="0.184048"/>
+      <testcase name="testReviewReturnsValidData" class="Tests\Feature\ShopifyAppTest" classname="Tests.Feature.ShopifyAppTest" file="/Users/timm/Documents/Personal/www/bold2/web/tests/API/ShopifyAppTest.php" line="27" assertions="4" time="0.175690"/>
+      <testcase name="testReviewReturnsStats" class="Tests\Feature\ShopifyAppTest" classname="Tests.Feature.ShopifyAppTest" file="/Users/timm/Documents/Personal/www/bold2/web/tests/API/ShopifyAppTest.php" line="43" assertions="5" time="0.168092"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

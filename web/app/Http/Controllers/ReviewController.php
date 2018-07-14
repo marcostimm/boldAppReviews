@@ -19,7 +19,7 @@ class ReviewController extends Controller
         if ($request->has('app')) {
             $reviews = $review->where('app_slug', $request->app)->orderBy($order, $dir)->get();
         } else {
-            $reviews = $review->orderBy($order, $dir)->all();
+            $reviews = $review->orderBy($order, $dir)->limit(100)->get();
         }
 
         return fractal()
