@@ -48,6 +48,10 @@ http://localhost/api/apps/sync
 http://localhost
 ```
 
+![Screenshot dashboard](https://raw.githubusercontent.com/marcostimm/boldAppReviews/master/web/public/img/dashboard.png)
+![Screenshot reviews](https://raw.githubusercontent.com/marcostimm/boldAppReviews/master/web/public/img/reviews.png)
+
+
 ## Running the tests
 
 Just run phpunit command
