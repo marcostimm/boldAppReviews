@@ -48,7 +48,9 @@ http://localhost/api/apps/sync
 http://localhost
 ```
 
+### Dashboard
 ![Screenshot dashboard](https://raw.githubusercontent.com/marcostimm/boldAppReviews/master/web/public/img/dashboard.png)
+### Reviews
 ![Screenshot reviews](https://raw.githubusercontent.com/marcostimm/boldAppReviews/master/web/public/img/reviews.png)
 
 
